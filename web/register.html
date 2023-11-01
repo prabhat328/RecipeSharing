@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Register</title>
+        <script type="text/javascript">  
+       function verifyPassword()
+       {
+           var pw = document.getElementById("pass1").value;  
+           var pw2 = document.getElementById("pass2").value;
+              
+             if(pw == "") {  
+             alert("**Fill the password please!");  
+             return false; 
+             document.getElementById('sub').disabled=true;
+            }
+            if(pw2 == "") {  
+             alert("**Confirm the password please!");  
+             return false; 
+             document.getElementById('sub').disabled=true;
+            }
+            if(pw.length < 8 || pw.length>15) {  
+            alert("**Password length must be atleast 8 characters and less than 15 characters");  
+            return false; 
+            document.getElementById('sub').disabled=true;
+            }
+            if(pw!==pw2)  
+            {   
+                alert("Passwords did not match"); 
+                document.getElementById('sub').disabled=true;
+                return false;
+                
+            } else {  
+                document.getElementById('sub').disabled=false; 
+            }
+       }
+        function ValidateEmail(email)
+        {
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if(email.value.match(mailformat))
+             {
+                document.getElementById('pass1').focus();
+                document.getElementById('sub').disabled=false;
+                return true;
+             }
+            else
+            {
+                alert("You have entered an invalid email address!");
+                document.getElementById('email').focus();
+                document.getElementById('sub').disabled=true;
+                return false;
+            }
+        }
+</script>
+  <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body onload=" document.getElementById('sub').disabled=true;">
+    <div class="form-container">
+    <form action="register" method="post">
+      <h3>register now</h3>
+      <input type="text" name="name" placeholder="enter name" class="box" required>
+      <input type="text" name="uname" placeholder="enter username"  class="box" required>
+      <input type="email" name="email" id="email" placeholder="enter email" onblur= "ValidateEmail(document.getElementById('email'))" class="box" required>
+      <input type="password" name="pass1" id="pass1" placeholder="enter password" class="box" required>
+      <input type="password" name="pass2" id="pass2" placeholder="confirm password" onblur="verifyPassword()" class="box" required>
+      <input type="submit" id="sub" value="Register now" class="btnu">
+      <p>already have an account? <a href="login.html">login now</a></p>
+   </form>
+   </div>
+    </body>
+
+    
+</html>

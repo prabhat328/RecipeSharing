@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.background-shade {
+    background: linear-gradient(to bottom, #e0f2f7, #007ea8);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #002147; /* Dark blue color for the heading */
+}
+
+.recipe-details {
+    margin-bottom: 20px;
+}
+
+.recipe-details img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.recipe-details p {
+    margin-bottom: 10px;
+}
+
+.recipe-details ul,
+.recipe-details ol {
+    margin-top: 0;
+}
+
+.recipe-details ul li,
+.recipe-details ol li {
+    margin-bottom: 5px;
+}
+
+.rate-comment-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.rate-recipe,
+.comment-recipe {
+    margin-bottom: 20px;
+}
+
+.rate-recipe h2,
+.comment-recipe h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center; /* Center the heading */
+}
+
+.stars {
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center; /* Center the stars */
+}
+
+/* Add styles for the filled star icon */
+.stars i.fas {
+    color: #f1c40f; /* Gold color for filled star */
+}
+
+.button {
+    background-color: #005b7f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; /* Center the button */
+}
+.button:hover {
+    background-color: #00445e;
+}
+
+textarea {
+    width: 97%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+/* Your existing CSS remains unchanged */
+
+.comment-recipe textarea {
+    margin-bottom: 10px;
+    min-height: 80px;
+}

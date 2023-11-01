@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recipe Sharing</title>
+        <script src="js/script1.js" defer></script>
+        <link rel="stylesheet" href="css/style1.css">
+
+        <!--google fonts cdn link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+        <!--font awesome cdn link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    </head>
+    
+    <body>
+        <!--Navigation-->
+        <header class="row container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-fire-burner"> </i> Recipe 
+            </a>
+            <div class="toggleMenu" onClick="toggleMenu();"></div>
+            <nav class="navigation row">
+                <ul class="primary-links row">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+                <ul class="secondary-links row">
+                    <li>
+                        <a href="#">
+                            <div id="search" class="fa-solid fa-magnifying-glass"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div id="login" class="fas fa-user-circle"></div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!--End Navigation-->
+
+        <!--Hero Section-->
+        <section class="hero">
+            <div class="container row">
+                <div class="hero-content">
+                    <div class="content">
+                        <div class="recipe row"><img src="images/list.png" alt="">Hot Recipes</div>
+                        <h1>Spicy delicious chicken wings.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est laboriosam at, minus aliquam quisquam veniam. Non asperiores dolor repellat deserunt exercitationem?</p>
+                        <div class="time row">
+                            <div class="row">
+                                <svg width="16" height="16" fill="currentColor" class="bi bi-stopwatch-fill" viewBox="0 0 16 16">
+                                    <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584.531.531 0 0 0 .013-.012l.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354a.717.717 0 0 0-.012.012A6.973 6.973 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1h-3zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0z"/>
+                                </svg>
+                                <p>30 minutes</p>
+                            </div>
+                            <div class="row">
+                                <svg viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/>
+                                    <path d="M212,32V224a8,8,0,0,1-16,0V168H148a8.2,8.2,0,0,1-6-2.7,8.1,8.1,0,0,1-2-6.2,412.8,412.8,0,0,1,11.8-59.3c12-42.4,28.7-67.8,49.5-75.3A7.9,7.9,0,0,1,212,32ZM127.9,78.7l-8-48a8,8,0,1,0-15.8,2.6L110.6,72H92V32a8,8,0,0,0-16,0V72H57.4l6.5-38.7a8,8,0,1,0-15.8-2.6l-8,48h0A4.9,4.9,0,0,0,40,80a44.1,44.1,0,0,0,36,43.3V224a8,8,0,0,0,16,0V123.3A44.1,44.1,0,0,0,128,80a4.9,4.9,0,0,0-.1-1.2Z"/>
+                                </svg>
+                                <p>Non veg</p>
+                            </div>
+                        </div>
+                        <div class="profile-btn row">
+                            <div class="profile row">
+                                <div class="p-img row"><img src="images/chef.png" alt=""></div>
+                                <div class="column">
+                                    <h6>Chef Bhutia</h6>
+                                    <p>29 July 2023</p>
+                                </div>
+                            </div>
+                            <div class="hero-btn-row">
+                                View Recipes
+                                <svg viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><circle cx="128" cy="128" r="96" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><polygon points="156 128 116 100 116 156 156 128" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Hero Section-->
+
+        <!--Category-->
+        <section class="category container">
+            <div class="catergory-title row">
+                <h2>Categories</h2>
+                <a href="#" class="category-btn">View all Categories</a>
+            </div>
+            <div class="category-cards column">
+                <a href="#" class="cat-card">
+                    <img src="images/img1.png" alt="">
+                    <h6>Breakfast</h6>
+                </a>
+                <a href="#" class="cat-card">
+                    <img src="images/img2.png" alt="">
+                    <h6>Vegan</h6>
+                </a>
+                <a href="#" class="cat-card">
+                    <img src="images/img3.png" alt="">
+                    <h6>Meat</h6>
+                </a>
+                <a href="#" class="cat-card">
+                    <img src="images/img4.png" alt="">
+                    <h6>Dessert</h6>
+                </a>
+                <a href="#" class="cat-card">
+                    <img src="images/img5.png" alt="">
+                    <h6>Lunch</h6>
+                </a>
+                <a href="#" class="cat-card">
+                    <img src="images/img6.png" alt="">
+                    <h6>Chocolate</h6>
+                </a>
+            </div>
+        </section>
+        <!--End Category-->
+
+        <!--Recipes-->
+        <section class="recipes container">
+            <div class="section-title">
+                <h2>Simple and Tasty recipes.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi hic voluptatem quibusdam. Numquam dignissimos, exercitationem consequatur maiores quis sequi quas laudantium!</p>
+            </div>
+
+            <div class="recipe-cards column">
+                <a href="#" class="card">
+                    <img src="images/img7.png" alt="">
+                    <h5>Big and juicy beef cheeseburger</h5>
+                    <div class="time row">
+                        <div class="row">
+                            <svg width="16" height="16" fill="currentColor" class="bi bi-stopwatch-fill" viewBox="0 0 16 16">
+                                <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584.531.531 0 0 0 .013-.012l.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354a.717.717 0 0 0-.012.012A6.973 6.973 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1h-3zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0z"/>
+                            </svg>
+                            <p>30 minutes</p>
+                        </div>
+                        <div class="row">
+                            <svg viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/>
+                                <path d="M212,32V224a8,8,0,0,1-16,0V168H148a8.2,8.2,0,0,1-6-2.7,8.1,8.1,0,0,1-2-6.2,412.8,412.8,0,0,1,11.8-59.3c12-42.4,28.7-67.8,49.5-75.3A7.9,7.9,0,0,1,212,32ZM127.9,78.7l-8-48a8,8,0,1,0-15.8,2.6L110.6,72H92V32a8,8,0,0,0-16,0V72H57.4l6.5-38.7a8,8,0,1,0-15.8-2.6l-8,48h0A4.9,4.9,0,0,0,40,80a44.1,44.1,0,0,0,36,43.3V224a8,8,0,0,0,16,0V123.3A44.1,44.1,0,0,0,128,80a4.9,4.9,0,0,0-.1-1.2Z"/>
+                            </svg>
+                            <p>Non-veg</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <img src="images/img8.png" alt="">
+                    <h5>Big and juicy beef cheeseburger</h5>
+                    <div class="time row">
+                        <div class="row">
+                            <svg width="16" height="16" fill="currentColor" class="bi bi-stopwatch-fill" viewBox="0 0 16 16">
+                                <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584.531.531 0 0 0 .013-.012l.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354a.717.717 0 0 0-.012.012A6.973 6.973 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1h-3zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0z"/>
+                            </svg>
+                            <p>30 minutes</p>
+                        </div>
+                        <div class="row">
+                            <svg viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/>
+                                <path d="M212,32V224a8,8,0,0,1-16,0V168H148a8.2,8.2,0,0,1-6-2.7,8.1,8.1,0,0,1-2-6.2,412.8,412.8,0,0,1,11.8-59.3c12-42.4,28.7-67.8,49.5-75.3A7.9,7.9,0,0,1,212,32ZM127.9,78.7l-8-48a8,8,0,1,0-15.8,2.6L110.6,72H92V32a8,8,0,0,0-16,0V72H57.4l6.5-38.7a8,8,0,1,0-15.8-2.6l-8,48h0A4.9,4.9,0,0,0,40,80a44.1,44.1,0,0,0,36,43.3V224a8,8,0,0,0,16,0V123.3A44.1,44.1,0,0,0,128,80a4.9,4.9,0,0,0-.1-1.2Z"/>
+                            </svg>
+                            <p>Non-veg</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <img src="images/img9.png" alt="">
+                    <h5>Big and juicy beef cheeseburger</h5>
+                    <div class="time row">
+                        <div class="row">
+                            <svg width="16" height="16" fill="currentColor" class="bi bi-stopwatch-fill" viewBox="0 0 16 16">
+                                <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584.531.531 0 0 0 .013-.012l.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354a.717.717 0 0 0-.012.012A6.973 6.973 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1h-3zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0z"/>
+                            </svg>
+                            <p>30 minutes</p>
+                        </div>
+                        <div class="row">
+                            <svg viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/>
+                                <path d="M212,32V224a8,8,0,0,1-16,0V168H148a8.2,8.2,0,0,1-6-2.7,8.1,8.1,0,0,1-2-6.2,412.8,412.8,0,0,1,11.8-59.3c12-42.4,28.7-67.8,49.5-75.3A7.9,7.9,0,0,1,212,32ZM127.9,78.7l-8-48a8,8,0,1,0-15.8,2.6L110.6,72H92V32a8,8,0,0,0-16,0V72H57.4l6.5-38.7a8,8,0,1,0-15.8-2.6l-8,48h0A4.9,4.9,0,0,0,40,80a44.1,44.1,0,0,0,36,43.3V224a8,8,0,0,0,16,0V123.3A44.1,44.1,0,0,0,128,80a4.9,4.9,0,0,0-.1-1.2Z"/>
+                            </svg>
+                            <p>Non-veg</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <img src="images/img10.png" alt="">
+                    <h5>Big and juicy beef cheeseburger</h5>
+                    <div class="time row">
+                        <div class="row">
+                            <svg width="16" height="16" fill="currentColor" class="bi bi-stopwatch-fill" viewBox="0 0 16 16">
+                                <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584.531.531 0 0 0 .013-.012l.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354a.717.717 0 0 0-.012.012A6.973 6.973 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1h-3zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0z"/>
+                            </svg>
+                            <p>30 minutes</p>
+                        </div>
+                        <div class="row">
+                            <svg viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/>
+                                <path d="M212,32V224a8,8,0,0,1-16,0V168H148a8.2,8.2,0,0,1-6-2.7,8.1,8.1,0,0,1-2-6.2,412.8,412.8,0,0,1,11.8-59.3c12-42.4,28.7-67.8,49.5-75.3A7.9,7.9,0,0,1,212,32ZM127.9,78.7l-8-48a8,8,0,1,0-15.8,2.6L110.6,72H92V32a8,8,0,0,0-16,0V72H57.4l6.5-38.7a8,8,0,1,0-15.8-2.6l-8,48h0A4.9,4.9,0,0,0,40,80a44.1,44.1,0,0,0,36,43.3V224a8,8,0,0,0,16,0V123.3A44.1,44.1,0,0,0,128,80a4.9,4.9,0,0,0-.1-1.2Z"/>
+                            </svg>
+                            <p>Non-veg</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <img src="images/img11.png" alt="">
+                    <h5>Big and juicy beef cheeseburger</h5>
+                    <div class="time row">
+                        <div class="row">
+                            <svg width="16" height="16" fill="currentColor" class="bi bi-stopwatch-fill" viewBox="0 0 16 16">
+                                <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584.531.531 0 0 0 .013-.012l.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354a.717.717 0 0 0-.012.012A6.973 6.973 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1h-3zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0z"/>
+                            </svg>
+                            <p>30 minutes</p>
+                        </div>
+                        <div class="row">
+                            <svg viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/>
+                                <path d="M212,32V224a8,8,0,0,1-16,0V168H148a8.2,8.2,0,0,1-6-2.7,8.1,8.1,0,0,1-2-6.2,412.8,412.8,0,0,1,11.8-59.3c12-42.4,28.7-67.8,49.5-75.3A7.9,7.9,0,0,1,212,32ZM127.9,78.7l-8-48a8,8,0,1,0-15.8,2.6L110.6,72H92V32a8,8,0,0,0-16,0V72H57.4l6.5-38.7a8,8,0,1,0-15.8-2.6l-8,48h0A4.9,4.9,0,0,0,40,80a44.1,44.1,0,0,0,36,43.3V224a8,8,0,0,0,16,0V123.3A44.1,44.1,0,0,0,128,80a4.9,4.9,0,0,0-.1-1.2Z"/>
+                            </svg>
+                            <p>Non-veg</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <img src="images/img12.png" alt="">
+                    <h5>Big and juicy beef cheeseburger</h5>
+                    <div class="time row">
+                        <div class="row">
+                            <svg width="16" height="16" fill="currentColor" class="bi bi-stopwatch-fill" viewBox="0 0 16 16">
+                                <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584.531.531 0 0 0 .013-.012l.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354a.717.717 0 0 0-.012.012A6.973 6.973 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1h-3zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0z"/>
+                            </svg>
+                            <p>30 minutes</p>
+                        </div>
+                        <div class="row">
+                            <svg viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/>
+                                <path d="M212,32V224a8,8,0,0,1-16,0V168H148a8.2,8.2,0,0,1-6-2.7,8.1,8.1,0,0,1-2-6.2,412.8,412.8,0,0,1,11.8-59.3c12-42.4,28.7-67.8,49.5-75.3A7.9,7.9,0,0,1,212,32ZM127.9,78.7l-8-48a8,8,0,1,0-15.8,2.6L110.6,72H92V32a8,8,0,0,0-16,0V72H57.4l6.5-38.7a8,8,0,1,0-15.8-2.6l-8,48h0A4.9,4.9,0,0,0,40,80a44.1,44.1,0,0,0,36,43.3V224a8,8,0,0,0,16,0V123.3A44.1,44.1,0,0,0,128,80a4.9,4.9,0,0,0-.1-1.2Z"/>
+                            </svg>
+                            <p>Non-veg</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <img src="images/img13.png" alt="">
+                    <h5>Big and juicy beef cheeseburger</h5>
+                    <div class="time row">
+                        <div class="row">
+                            <svg width="16" height="16" fill="currentColor" class="bi bi-stopwatch-fill" viewBox="0 0 16 16">
+                                <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584.531.531 0 0 0 .013-.012l.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354a.717.717 0 0 0-.012.012A6.973 6.973 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1h-3zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0z"/>
+                            </svg>
+                            <p>30 minutes</p>
+                        </div>
+                        <div class="row">
+                            <svg viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/>
+                                <path d="M212,32V224a8,8,0,0,1-16,0V168H148a8.2,8.2,0,0,1-6-2.7,8.1,8.1,0,0,1-2-6.2,412.8,412.8,0,0,1,11.8-59.3c12-42.4,28.7-67.8,49.5-75.3A7.9,7.9,0,0,1,212,32ZM127.9,78.7l-8-48a8,8,0,1,0-15.8,2.6L110.6,72H92V32a8,8,0,0,0-16,0V72H57.4l6.5-38.7a8,8,0,1,0-15.8-2.6l-8,48h0A4.9,4.9,0,0,0,40,80a44.1,44.1,0,0,0,36,43.3V224a8,8,0,0,0,16,0V123.3A44.1,44.1,0,0,0,128,80a4.9,4.9,0,0,0-.1-1.2Z"/>
+                            </svg>
+                            <p>Non-veg</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <img src="images/img14.png" alt="">
+                    <h5>Big and juicy beef cheeseburger</h5>
+                    <div class="time row">
+                        <div class="row">
+                            <svg width="16" height="16" fill="currentColor" class="bi bi-stopwatch-fill" viewBox="0 0 16 16">
+                                <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584.531.531 0 0 0 .013-.012l.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354a.717.717 0 0 0-.012.012A6.973 6.973 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1h-3zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0z"/>
+                            </svg>
+                            <p>30 minutes</p>
+                        </div>
+                        <div class="row">
+                            <svg viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/>
+                                <path d="M212,32V224a8,8,0,0,1-16,0V168H148a8.2,8.2,0,0,1-6-2.7,8.1,8.1,0,0,1-2-6.2,412.8,412.8,0,0,1,11.8-59.3c12-42.4,28.7-67.8,49.5-75.3A7.9,7.9,0,0,1,212,32ZM127.9,78.7l-8-48a8,8,0,1,0-15.8,2.6L110.6,72H92V32a8,8,0,0,0-16,0V72H57.4l6.5-38.7a8,8,0,1,0-15.8-2.6l-8,48h0A4.9,4.9,0,0,0,40,80a44.1,44.1,0,0,0,36,43.3V224a8,8,0,0,0,16,0V123.3A44.1,44.1,0,0,0,128,80a4.9,4.9,0,0,0-.1-1.2Z"/>
+                            </svg>
+                            <p>Non-veg</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <img src="images/img15.png" alt="">
+                    <h5>Big and juicy beef cheeseburger</h5>
+                    <div class="time row">
+                        <div class="row">
+                            <svg width="16" height="16" fill="currentColor" class="bi bi-stopwatch-fill" viewBox="0 0 16 16">
+                                <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584.531.531 0 0 0 .013-.012l.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354a.717.717 0 0 0-.012.012A6.973 6.973 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1h-3zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0z"/>
+                            </svg>
+                            <p>30 minutes</p>
+                        </div>
+                        <div class="row">
+                            <svg viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/>
+                                <path d="M212,32V224a8,8,0,0,1-16,0V168H148a8.2,8.2,0,0,1-6-2.7,8.1,8.1,0,0,1-2-6.2,412.8,412.8,0,0,1,11.8-59.3c12-42.4,28.7-67.8,49.5-75.3A7.9,7.9,0,0,1,212,32ZM127.9,78.7l-8-48a8,8,0,1,0-15.8,2.6L110.6,72H92V32a8,8,0,0,0-16,0V72H57.4l6.5-38.7a8,8,0,1,0-15.8-2.6l-8,48h0A4.9,4.9,0,0,0,40,80a44.1,44.1,0,0,0,36,43.3V224a8,8,0,0,0,16,0V123.3A44.1,44.1,0,0,0,128,80a4.9,4.9,0,0,0-.1-1.2Z"/>
+                            </svg>
+                            <p>Non-veg</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!--End Recipes-->
+
+        <!--Footer-->
+        <footer class="container">
+            <div class="footer-content row">
+                <div>
+                    <a href="#" class="logo">
+                        <i class="fa-solid fa-fire-burner"> </i> Recipe 
+                    </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ullam labore quasi tempora at, optio velit tenetur vitae, quisquam ducimus modi.</p>
+                </div>
+                <ul class="row">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="footer-links row">
+                <p class="copy-rights">&copy; 2023. All rights reserved</p>
+            </div>
+        </footer>
+        <!--Footer-->
+
+    </body>
+</html>
